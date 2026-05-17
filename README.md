@@ -21,7 +21,7 @@ Version History:
 
 # Pre-Requisites
 * Python 3.7+
-* NetMiko 4.1+
+* NetMiko 4.4+
 
 # Usage
 Command line parameters:

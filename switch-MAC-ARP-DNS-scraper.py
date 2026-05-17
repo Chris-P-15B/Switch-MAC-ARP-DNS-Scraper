@@ -21,7 +21,7 @@ from netmiko.exceptions import (
     NetMikoAuthenticationException,
 )
 from paramiko.ssh_exception import SSHException
-from ssh_autodetect import SSHDetect
+from netmiko.ssh_autodetect import SSHDetect
 from netmiko.ssh_dispatcher import ConnectHandler
 from threading import Thread
 from pprint import pprint
@@ -579,7 +579,7 @@ def scrape_switch_details(
             device.disconnect()
 
         # Aruba CX
-        elif best_match == "aruba_osswitch":
+        elif best_match == "aruba_aoscx":
             parse_aruba(best_match, device, interface_list)
             device.disconnect()
 
